@@ -1,0 +1,12 @@
+table,th,td{
+    border:1px solid black;
+    font-size: x-large;
+    background-color:cadetblue;
+}
+button{
+    background-color: darkolivegreen;
+    font-size: medium;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+}

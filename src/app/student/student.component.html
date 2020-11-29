@@ -1,0 +1,32 @@
+<h1>Student Details</h1><br>
+<div>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Total Marks</th>
+            <th>Average Marks</th>
+        </tr>
+        <tr *ngFor="let s of students">
+            <td>{{s.id}}</td>
+            <td>{{s.name}}</td>
+            <td>{{s.allMarks}}</td>
+            <td>{{s.average|number:'1.2-2'}}</td>
+        </tr>
+    </table>
+    <br><br>
+    <button name="btn-add" type="button" (click)="add()">Add New</button>
+</div>
+<br><hr><br>
+<div *ngIf="flag">
+    <h3>Add Student details</h3>
+<input name="id" type="text" [(ngModel)]="id"><br>
+<input name="nm" type="text" [(ngModel)]="name"><br>
+<input name="jm" type="number" [(ngModel)]="javaMarks"><br>
+<input name="nm" type="number" [(ngModel)]="mathMarks"><br>
+<input name="nm" type="number" [(ngModel)]="scienceMarks"><br>
+
+<br>
+
+<button name="btn" type="button" (click)="addStudMarks()">Add Details</button>
+</div>
